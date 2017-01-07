@@ -28,9 +28,84 @@
     <title>Hello World</title>
 </head>
 <body id="y">
-    <script>
-    $("#y").load("http://192.168.43.64/cyberChallengeCon/");
-</script>
+   <div class="views">
+        <div class="view view-main">
+            <div class="pages no-navbar">
+                <div class="page theme-bluegray" data-page="index">
+                    <div class="page-content">
+                        <div class="image-background">
+                            <img src="img/land.gif" alt="land">
+                        </div>
+
+                    <p class="title">Cyber Challenge</p>
+                    <p class="buttons-row">
+                        <a href="#login" class="button"></a>
+                        <a href="#login" class="button button-big button-fill color-teal center">Get Start</a>
+                        <a href="#login" class="button"></a>
+
+                    </p>
+                    
+
+                    </div>
+                    
+                </div>
+                <div class="page cached theme-blue" data-page="login">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="center">Sign-In</div>
+                        </div>
+                    </div>
+                    <div class="toolbar toolbar-bottom">
+                        <div class="toolbar-inner">
+                            <a href="#index" class="link"><div class="item-media"><i class="icon f7-icons">arrow_left</i></div>&nbsp; Back</a>
+                            <a href="reg.html" class="link">Register</a>
+                        </div>
+                    </div>
+                    <div class="page-content login-screen-content">
+                        <!-- Login form -->
+                        <form method="post" id="loginForm" action="#">
+                            <div class="list-block" style="margin-top: 60px;">
+                            <ul>
+                              <li class="item-content">
+                           
+                                <div class="item-inner">
+                                  <div class="item-title label">Email</div>
+                                  <div class="item-input">
+                                    <input type="email" name="email" placeholder="Email">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title label">Pin Code</div>
+                                  <div class="item-input">
+                                    <input type="number" name="pin" placeholder="Pin Code">
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="list-block">
+                            <ul>
+                              <li>
+                                <p class="buttons-row">
+                                    <a href="#" class="button"></a>
+                                    <input type="submit" class="button button-fill color-green" value="Sign in" >
+                                    <a href="#" class="button"></a>
+                                </p>
+                              </li>
+                            </ul>
+                            <div class="list-block-label">
+                                <p>Don't have account? <a href="#reg" class="link">Register</a></p>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="login-modal"></div>
     
     <script type="text/javascript" src="js/framework7.min.js"></script>
    
